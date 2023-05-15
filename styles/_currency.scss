@@ -1,0 +1,115 @@
+.container {
+  h2 {
+    margin: 20px 0;
+    padding: 5px;
+    color: #fff9;
+    // background-color: #fff3;
+    border-radius: 5px;
+  }
+
+  width: 95%;
+  height: 420px;
+  margin: 10px auto;
+  padding: 0 20px;
+  border-radius: 3px;
+
+  @media screen and (width >= 760px) {
+    width: 70%;
+    margin: 0 10px;
+    margin-right: 20px;
+    // background-color: #c8d6e5;
+  }
+
+  .currency {
+    padding: 20px 0px;
+
+    select {
+      padding: 10px 20px 10px 10px;
+      width: 100px;
+      /* to change a default appearance */
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.5rem;
+      background-color: #34495e;
+
+      &:hover {
+        opacity: 0.95;
+        border-color: #fff;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input {
+      width: 100%;
+      // width: 320px;
+      border: 0;
+      margin-top: 20px;
+      padding: 5px 20px 10px 10px;
+      background: transparent;
+      font-size: 1.875rem;
+      font-weight: bold;
+      text-align: right;
+      color: #2c3e50;
+      background-color: #fff;
+      border-radius: 40px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .tooltip {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 24px;
+      right: 5px;
+      color: #fff;
+      // background-color: #fff;
+
+      &:hover + .content {
+        visibility: visible;
+        opacity: 0.9;
+      }
+    }
+
+    .content {
+      width: 90%;
+      margin: 20px 0;
+      text-align: left;
+      font-size: 1.1rem;
+      color: #2c3e50;
+
+      padding: 15px;
+      background-color: #fff;
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      border-radius: 4px;
+
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.7s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        background: #fff;
+        top: -14px;
+        right: 10px;
+        // left: 50%;
+        transform: rotate(45deg) translateY(50%);
+      }
+    }
+  }
+}
