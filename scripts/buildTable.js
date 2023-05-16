@@ -1,4 +1,4 @@
-import code from './data';
+import code from '../data';
 
 const buildTable = (data) => {
   const table = document.getElementById('codeTable');

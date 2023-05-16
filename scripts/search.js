@@ -1,4 +1,4 @@
-const search = document.querySelector('.input-block input');
+const search = document.querySelector('.table__search input');
 const tableRows = document.querySelectorAll('tbody tr');
 
 function searchCode() {

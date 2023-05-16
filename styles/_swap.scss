@@ -1,27 +1,29 @@
-#swap {
-  margin-left: 20px;
-}
-
-// #swap:hover {
-//   transform: rotate(360deg);
-//   transition: all 0.4s ease-out;
-// }
-
 .swap-rate-container {
-  width: 92%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.rate {
-  // color: #2c3e50;
-  color: #fff9;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 0 10px;
+  img {
+    margin-left: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
 
-  @media screen and (width >= 600px) {
-    font-size: 1.7rem;
+    &:hover {
+      transform: rotate(360deg);
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  .rate {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 10px;
+
+    @media screen and (width >= 600px) {
+      font-size: 1.7rem;
+    }
   }
 }

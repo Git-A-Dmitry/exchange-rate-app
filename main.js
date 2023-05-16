@@ -1,5 +1,5 @@
-import buildTable from './buildTable';
-import searchCode from './search';
+import buildTable from './scripts/buildTable';
+import searchCode from './scripts/search';
 
 const currencyEl_one = document.getElementById('currency-one');
 const currencyEl_two = document.getElementById('currency-two');

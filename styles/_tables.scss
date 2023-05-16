@@ -2,7 +2,7 @@
   height: 420px;
   margin: 0 auto;
   // padding: 15px;
-  width: 95%;
+  width: 100%;
   // background: #ecf0f1;
   // background-color: #fffb;
   // border: 3px solid #c8d6e5;
@@ -32,8 +32,8 @@
 
   table {
     width: 100%;
-    padding: 1rem;
-    color: #fff;
+    // padding: 1rem;
+    // color: #fff;
     opacity: 0.8;
 
     thead {
@@ -43,22 +43,15 @@
       color: #55acee;
       font-size: 1.5rem;
       background-color: rgba(0, 0, 0, 0.8);
-
-      // th {
-      //   position: sticky;
-      //   top: 0;
-      //   padding: 10px;
-      //   background-color: fff;
-      // }
     }
 
-    tr {
-      // background-color: #e1e8ed;
-    }
+    // tr {
+    //   background-color: #e1e8ed;
+    // }
 
     tr:nth-child(even) {
       // background-color: #fff;
-      // background-color: #f2f2f2;
+      background-color: #fff5;
     }
 
     th {
@@ -71,7 +64,11 @@
       font-size: 1.4rem;
       color: #fff;
       text-align: left;
-      padding: 10px 30px;
+      padding: 5px 30px;
+
+      @media screen and (width >= 760px) {
+        padding: 8px 30px;
+      }
     }
 
     tbody tr {

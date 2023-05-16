@@ -16,9 +16,14 @@
   }
 
   h2 {
-    margin-top: 15px;
+    margin: auto auto;
     padding: 5px;
     color: #fff;
+    font-size: 1.2rem;
     text-transform: uppercase;
+
+    @media screen and (width >= 760px) {
+      font-size: 1.5rem;
+    }
   }
 }
