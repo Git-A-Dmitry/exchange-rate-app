@@ -12,7 +12,7 @@
   // align-items: center;
 
   @media screen and (width >= 760px) {
-    // width: 60%;
+    width: 80%;
     margin: 7px 40px;
   }
 
@@ -26,6 +26,7 @@
 
   input {
     width: 90%;
+    padding-left: 10px;
     border: none;
     outline: none;
     font-size: 1.2rem;

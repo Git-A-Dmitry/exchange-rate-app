@@ -9,9 +9,11 @@
     background-color: #fff;
     cursor: pointer;
     border-radius: 50px;
+    border: 1px solid #55acee;
 
     &:hover {
-      transform: rotate(360deg);
+      // transform: rotate(360deg);
+      border: 2px solid #55acee;
       transition: all 0.2s ease-out;
     }
   }

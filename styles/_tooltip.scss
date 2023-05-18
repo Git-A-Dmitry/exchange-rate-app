@@ -1,0 +1,59 @@
+.tooltip {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 24px;
+    right: 5px;
+    color: #fff;
+
+    &:hover + .tooltip__content {
+      visibility: visible;
+      opacity: 0.9;
+    }
+  }
+
+  &__content {
+    width: 90%;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #2c3e50;
+
+    padding: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: -70px;
+    right: 37px;
+    border-radius: 4px;
+
+    visibility: hidden;
+    // visibility: visible;
+    opacity: 0;
+    transition: 0.7s;
+
+    @media screen and (width >= 760px) {
+      width: 80%;
+      right: 1px;
+      top: -70px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      bottom: 20px;
+      right: -12px;
+      transform: rotate(45deg) translateY(50%);
+
+      @media screen and (width >= 760px) {
+        width: 17px;
+        height: 17px;
+        bottom: 1px;
+        right: 13px;
+      }
+    }
+  }
+}
