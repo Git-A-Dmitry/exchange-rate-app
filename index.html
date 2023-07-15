@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/currency.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/currency.png"
+    />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.scss" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.scss"
+    />
     <title>Ex-Rate App</title>
   </head>
 
@@ -19,9 +29,15 @@
       <div class="table__block">
         <div class="table__search">
           <!-- <img src="search.png" alt="" /> -->
-          <input type="search" placeholder="search code" />
+          <input
+            type="search"
+            placeholder="search code"
+          />
         </div>
-        <div class="table__body" id="overflow">
+        <div
+          class="table__body"
+          id="overflow"
+        >
           <table>
             <thead>
               <tr>
@@ -35,21 +51,32 @@
       </div>
 
       <div class="container">
-        <div class="tooltip">
+        <!-- <div class="tooltip">
           <div class="tooltip__content">
             <p>Press the Currency Button to choose the currency.</p>
-            <!-- <p>Press arrow keys to choose the amounts.</p> -->
+            <p>Press arrow keys to choose the amounts.</p>
             <p>Press the Switch Button to swap currencies.</p>
           </div>
 
-          <img src="/icons8-info-250.png" alt="" width="24" height="24" />
+          <img
+            src="/icons8-info-250.png"
+            alt=""
+            width="24"
+            height="24"
+          />
+        </div> -->
+        <div class="date-block">
+          <h2>The Latest Rate:</h2>
+          <p class="date"></p>
         </div>
-        <h2>The Latest Rate</h2>
 
         <hr />
 
         <div class="currency">
-          <select name="" id="currency-one">
+          <select
+            name=""
+            id="currency-one"
+          >
             <option value="AED">AED</option>
             <option value="ARS">ARS</option>
             <option value="AUD">AUD</option>
@@ -98,24 +125,51 @@
             <option value="TRY">TRY</option>
             <option value="TWD">TWD</option>
             <option value="UAH">UAH</option>
-            <option value="USD" selected>USD</option>
+            <option
+              value="USD"
+              selected
+            >
+              USD
+            </option>
             <option value="UYU">UYU</option>
             <option value="VND">VND</option>
             <option value="ZAR">ZAR</option>
           </select>
-          <input type="number" id="amount-one" placeholder="0" value="1" />
+          <input
+            type="number"
+            id="amount-one"
+            placeholder="0"
+            value="1"
+          />
         </div>
 
         <div class="swap-rate-container">
           <!-- <button class="btn" id="swap"></button> -->
           <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/bharat-icons" title="Bharat Icons"> Bharat Icons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
-          <img src="/switch.png" alt="" width="50" height="50" id="swap" />
+          <img
+            src="/alter.png"
+            alt="alter"
+            width="55"
+            height="55"
+            id="swap"
+          />
 
-          <div class="rate" id="rate"></div>
+          <div
+            class="rate"
+            id="rate"
+          ></div>
         </div>
 
         <div class="currency">
-          <select name="" id="currency-two">
+          <input
+            type="number"
+            id="amount-two"
+            placeholder="0"
+          />
+          <select
+            name=""
+            id="currency-two"
+          >
             <option value="AED">AED</option>
             <option value="ARS">ARS</option>
             <option value="AUD">AUD</option>
@@ -156,7 +210,12 @@
             <option value="PLN">PLN</option>
             <option value="PYG">PYG</option>
             <option value="RON">RON</option>
-            <option value="RUB" selected>RUB</option>
+            <option
+              value="RUB"
+              selected
+            >
+              RUB
+            </option>
             <option value="SAR">SAR</option>
             <option value="SEK">SEK</option>
             <option value="SGD">SGD</option>
@@ -169,11 +228,18 @@
             <option value="VND">VND</option>
             <option value="ZAR">ZAR</option>
           </select>
-          <input type="number" id="amount-two" placeholder="0" />
+          <!-- <input
+            type="number"
+            id="amount-two"
+            placeholder="0"
+          /> -->
         </div>
       </div>
     </section>
 
-    <script type="module" src="/main.js"></script>
+    <script
+      type="module"
+      src="/main.js"
+    ></script>
   </body>
 </html>

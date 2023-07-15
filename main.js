@@ -1,5 +1,6 @@
 import buildTable from './scripts/buildTable';
 import searchCode from './scripts/search';
+import getDate from './scripts/date';
 
 const currencyEl_one = document.getElementById('currency-one');
 const currencyEl_two = document.getElementById('currency-two');

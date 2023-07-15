@@ -17,7 +17,8 @@
 
 body {
   height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/statistics.jpg);
+  background-color: #ecf0f1;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/statistics.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -28,14 +29,15 @@ body {
 .main-section {
   display: flex;
   flex-direction: column-reverse;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 40px 20px;
   // background-color: var(--color-primary);
-  background-color: #0009;
+  background-color: rgb(21, 23, 24);
   border-radius: 5px;
 
   @media screen and (width >= 760px) {
+    width: 90%;
     margin-top: 60px;
     height: 500px;
     flex-direction: row;

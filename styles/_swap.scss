@@ -6,14 +6,15 @@
 
   img {
     margin-left: 20px;
+    padding: 12px;
     background-color: #fff;
     cursor: pointer;
     border-radius: 50px;
-    border: 1px solid #55acee;
+    // border: 1px solid #55acee;
 
     &:hover {
       // transform: rotate(360deg);
-      border: 2px solid #55acee;
+      border: 2px solid #fff;
       transition: all 0.2s ease-out;
     }
   }
