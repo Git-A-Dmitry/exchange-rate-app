@@ -4,8 +4,8 @@
     margin: 20px 0;
     padding: 5px;
     color: #55acee;
-    // background-color: #fff3;
-    // border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
   }
 
   p {
@@ -18,7 +18,7 @@
   padding: 0 20px;
   border-radius: 3px;
 
-  @media screen and (width >= 760px) {
+  @media screen and (width >= 840px) {
     width: 70%;
     margin: 0 10px;
     margin-right: 20px;

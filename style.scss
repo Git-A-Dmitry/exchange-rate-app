@@ -34,15 +34,19 @@ body {
   padding: 40px 20px;
   // background-color: var(--color-primary);
   background-color: rgb(21, 23, 24);
-  border-radius: 5px;
 
-  @media screen and (width >= 760px) {
+  @media screen and (width >= 840px) {
     width: 90%;
     margin-top: 60px;
-    height: 500px;
+    height: 550px;
     flex-direction: row;
     justify-content: space-around;
     border: 1px solid #fff8;
+    border-radius: 5px;
+  }
+
+  @media screen and (width >= 1900px) {
+    height: 800px;
   }
 }
 
@@ -51,7 +55,7 @@ body {
   flex-direction: column;
   width: 100%;
 
-  @media screen and (width >= 760px) {
+  @media screen and (width >= 840px) {
     width: 70%;
   }
 }
