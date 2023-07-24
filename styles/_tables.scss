@@ -43,6 +43,10 @@
         background: rgb(21, 23, 24);
         color: #55acee;
         font-size: 1.4rem;
+
+        @media screen and (width >= 760px) {
+          font-size: 1.3rem;
+        }
       }
     }
 
